@@ -1,3 +1,17 @@
+# 注意
+把re.txt文件里的torch等注释了。
+根据电脑显卡配pytorch版本，试过2080ti(CUDA11.7)和3060显卡(CUDA11.2)，只能使用pytorch-1.10.0：
+## 下载方法：
+1、进入pytorch地址：
+
+https://pytorch.org/get-started/previous-versions/
+
+2、找到1.10.0版本的命令,运行：
+```
+# CUDA 11.1
+pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
 # Yolov5_ros
 
 This package provides a ROS wrapper for [PyTorch-YOLOv5](https://github.com/ultralytics/yolov5) based on PyTorch-YOLOv5. The package has been tested with Ubuntu 16.04 and Ubuntu 18.04.
